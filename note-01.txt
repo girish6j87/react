@@ -1,0 +1,52 @@
+----------------------------------------------------------------------------------------------------------------------------------------------
+Q1: What is Emmet?
+A: Emmet is a Extension or plugin for Vs-code which helps you write HTML and CSS faster by using simple abbreviations that are then converted into code blocks by using this developer can code in a fastest way to save time and extra effort.
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2: Difference between a Library and Framework?
+A: The main distinction between a framework and a library is that a framework inverts program control. It informs the developer of what they require. A library, however, does not. Instead, a programmer calls the library when and where he needs it.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3: What is CDN? Why do we use it?
+A: A CDN is a content delivery network i.e. a network of servers that distributes content from an “origin” server throughout the world by caching content close to where each end user is accessing the internet via a web-enabled device. The content they request is first stored on the origin server and is then replicated and stored elsewhere as needed.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4: Why is React known as React?
+A: React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5: What is crossorigin in script tag?
+A: The purpose of crossorigin attributes is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains. The resources may include Audio, Video, Images, Link or external script that specifies whether to support a cross-origin request or not.
+CORS: It stands for cross-origin resource sharing. It is a mechanism by which one webpage requests to another domain for fetching out the resource like audio, video, script, etc. from the third party server without leaking their credentials information. 
+Values: This attribute contains two values which are given below –
+anonymous: It has a default value. It defines a CORS request which will be sent without passing the credential information.
+use-credentials: A cross-origin request will be sent with credentials, cookies, and certificate.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q6: What is diference between React and ReactDOM?
+A: React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q7: What is difference between react.development.js and react.production.js files via CDN?
+A: react.development.js is used for react development and its consoles are open, we can actually debug in main core files, whereas the production file contains minified version and it is not possible to debug the main file.
+
+Q8: Difference between async and defer?
+A: async and defer are the keyword which are used inside script tag along with src, these are used to load external script efficiently to our web pages.
+Note: 
+When we load web pages two things happen:
+    a) html parsing.
+    b) loading of script.
+Loading of script happen in 2 ways :
+    a) fetching script from network
+    b) execution of script 
+e.g :
+<script src ="abc.js"></script>
+By default, the js engine starts Html parsing but once the script tag encounters it pauses Html parsing, starts fetching script from the network and once network fetch is completed, it pauses the Html parsing and starts executing the script, and once the script execution is completed then only it starts remaining Html parsing.
+
+<script async src ="abc.js"><script>
+In this case by default the js engine starts Html parsing and fetching of the script from network parallelly, once fetching is completed then it pauses Html parsing, and starts executing the script, and at the end, once the execution of script is completed then it will start remaining html parsing.
+
+<script defer src ="abc.js"></script>
+In this case also by default, the js engine starts Html parsing and fetching the script from the network parallelly but it continoues html parsing and script will execute once parsing is completed.
+ 
+
