@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React the new journey</title>
-</head>
-<body>
-   <h1>Welcome to React! </h1> 
-</body>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="React review ITR-01">
+        <meta name="keywords" content="HTML, CSS, JavaScript, React, Practice, zero to hero">
+        <meta name="author" content="Girish">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ITR-01</title>
+        <link rel="stylesheet" href="style.css">
+       
+   </head>
+
+   <body>
+        <div id="root">
+            No-render
+            <!--/* <h1>heading 1</h1> */-->
+            
+        </div>
+
+        <script>
+           const rootEle = document.getElementById("root");
+           console.log(rootEle);
+           let heading = document.createElement("h1");
+           heading.innerHTML="heading 1 from js";
+           rootEle.appendChild(heading);
+           console.log(rootEle); 
+           
+        </script> 
+
+        <script crossorigin="anonymous" src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin="anonymous" src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script async src="app.js"></script>
+
+   </body>
 </html>
